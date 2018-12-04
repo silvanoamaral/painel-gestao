@@ -4,7 +4,7 @@ import { Component, Input } from '@angular/core';
   selector: 'app-breadcrumb',
   template: `
     <ul>
-      <li>Pàgina Inicial</li>
+      <li>Página Inicial <span class="fa fa-angle-right"></span></li>
       <li>{{ page }}</li>
     </ul>
   `
