@@ -10,6 +10,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
 import { PainelGestaoComponent } from './page/painel-gestao/painel-gestao.component';
 import { ContaDigitalComponent } from './page/conta-digital/conta-digital.component';
 import { AntRecebiveisComponent } from './page/ant-recebiveis/ant-recebiveis.component';
+import { IconComponent } from './components/icon.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AntRecebiveisComponent } from './page/ant-recebiveis/ant-recebiveis.com
     PainelGestaoComponent,
     ContaDigitalComponent,
     BreadcrumbComponent,
-    AntRecebiveisComponent
+    AntRecebiveisComponent,
+    IconComponent
   ],
   imports: [
     BrowserModule,
