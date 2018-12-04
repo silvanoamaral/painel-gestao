@@ -29,6 +29,12 @@ $border-content-h3: #ccc;
   display: block;
 }
 
+.breakpoint {
+  margin: 0px auto;
+  min-width: 930px;
+  max-width: 1306px;
+}
+
 .container {
   float: left;
   min-height: 500px;
@@ -37,6 +43,7 @@ $border-content-h3: #ccc;
 .navbar {
   background-color: $bg-menu;
   width: 20%;
+  overflow: hidden;
 
   nav {
     ul {
@@ -64,7 +71,7 @@ $border-content-h3: #ccc;
     .breadcrumb {
       width: 100%;
       display: block;
-    
+
       > ul {
         > li {
           display: inline-block;
@@ -72,17 +79,15 @@ $border-content-h3: #ccc;
           font-size: 12px;
           position: relative;
 
-          i.seta {
-            font-size: 11px;
+          span {
             position: relative;
-            left: 8px;
-            margin-right: 10px;
+            left: 5px;
           }
 
         }
       }
     }
-  
+
     h2 {
       &.title {
         color: $color-title;
