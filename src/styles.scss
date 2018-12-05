@@ -1,17 +1,7 @@
-* {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-  font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #333;
-}
-a {
-  text-decoration: none;
-}
-
+$bg-body: #f5f5f5;
+$color-padrao: #333;
 $color-title: #16254c;
+$color-sub-title: #2095d4;
 $color-white: #fff;
 $bg-white: #fff;
 $bg-menu: #0e1532;
@@ -28,6 +18,24 @@ $select-padding: 10px;
 $select-size: 60%;
 $arrow: '»';
 $sync: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='sync' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-sync fa-w-16'%3E%3Cpath fill='currentColor' d='M440.935 12.574l3.966 82.766C399.416 41.904 331.674 8 256 8 134.813 8 33.933 94.924 12.296 209.824 10.908 217.193 16.604 224 24.103 224h49.084c5.57 0 10.377-3.842 11.676-9.259C103.407 137.408 172.931 80 256 80c60.893 0 114.512 30.856 146.104 77.801l-101.53-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12h-47.411c-6.853 0-12.315 5.729-11.987 12.574zM256 432c-60.895 0-114.517-30.858-146.109-77.805l101.868 4.871c6.845.327 12.573-5.134 12.573-11.986v-47.412c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12V500c0 6.627 5.373 12 12 12h47.385c6.863 0 12.328-5.745 11.985-12.599l-4.129-82.575C112.725 470.166 180.405 504 256 504c121.187 0 222.067-86.924 243.704-201.824 1.388-7.369-4.308-14.176-11.807-14.176h-49.084c-5.57 0-10.377 3.842-11.676 9.259C408.593 374.592 339.069 432 256 432z' class=''%3E%3C/path%3E%3C/svg%3E";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  font-family: 'Montserrat',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: $color-padrao;
+}
+
+body {
+  background-color: $bg-body;
+}
+
+a {
+  text-decoration: none;
+}
 
 .chart,
 .arroba {
@@ -77,11 +85,37 @@ $sync: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon
     ul {
       > li {
         display: block;
-        padding: 10px;
+        padding: 10px 0;
         border-bottom: 1px solid $border-menu;
+        line-height: 20px;
 
         > a {
-          color: $color-white;
+          display: flex;
+          padding: 0 15px;
+          position: relative;
+
+          span {
+            color: $color-white;
+            line-height: 32px;
+          }
+
+          svg {
+            width: 30px;
+            height: 30px;
+            position: relative;
+            left: 10px;
+            margin-right: 30px;
+          }
+
+          :hover:after {
+            content: '»';
+            color: #2095d4;
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            font-size: 20px;
+            z-index: 0;
+          }
         }
       }
     }
@@ -121,6 +155,15 @@ $sync: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon
         color: $color-title;
         font-weight: 100;
         font-size: 34px;
+        margin: 20px 0 35px 0;
+
+        svg {
+          width: 35px;
+          height: 35px;
+          position: relative;
+          top: 5px;
+          margin-right: 10px;
+        }
       }
     }
   }
@@ -133,33 +176,90 @@ $sync: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon
       float: left;
       width: 50%;
       background-color: $bg-white;
-      min-height: 100px;
+      min-height: 320px;
 
       h3 {
+        color: $color-sub-title;
         font-weight: 100;
         line-height: 70px;
         height: 70px;
-        font-size: 14px;
-        padding-left: 25px;
+        font-size: 20px;
+        padding-left: 20px;
         border-bottom: 1px solid $border-content-h3;
-        margin-bottom: 20px;
       }
 
       &.atalhos {
         width: 60%;
+        min-width: 550px;
         margin-right: 3%;
       }
 
       &.alerta {
         width: 35%;
+
+        .alerta__title {
+          position: relative;
+
+          p {
+            position: absolute;
+            right: 16px;
+            top: 25px;
+            font-size: 12px;
+          }
+        }
+
+        .card__box {
+          &.geral {
+            width: 100%;
+            padding: 0;
+
+            .notas {
+              border-bottom: 1px solid $border-header;
+              margin: 0 20px;
+              padding: 10px 0;
+              overflow: hidden;
+
+              &.no__border {
+                border: 0px;
+              }
+
+              p {
+                margin: 0px;
+                line-height: 30px;
+                float: left;
+              }
+
+              select {
+                width: 130px;
+                float: right;
+                padding: 5px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
       }
 
       .card__box {
+        padding: 20px 0px 20px 20px;
+        width: 60%;
+        float: left;
+
+        &.geral {
+          width: 30%;
+          padding: 20px 0px 10px 34px;
+          border-left: 1px solid $border-header;
+        }
+
         p {
           font-size: 12px;
+          margin-bottom: 10px;
         }
 
         .card__box--grid {
+          float: left;
+          width: 46%;
+
           span {
             border: 1px solid $border-list-cart;
             padding: 10px;
@@ -167,7 +267,8 @@ $sync: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon
             min-width: 130px;
             display: inline-block;
             text-align: center;
-            margin: 0 10px 10px 10px;
+            margin: 0 10px 10px 0px;
+            font-size: 12px;
           }
         }
       }
@@ -175,27 +276,30 @@ $sync: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon
   }
 }
 
+.select_list {
+  position: relative;
 
-select {
-  border: 1px solid $border-menu;
-  border-radius: 0;
-  -webkit-appearance: none;
-  appearance: none;
-  cursor: pointer;
-  padding: $select-padding;
-  width: $select-size;
-
-  // Allows us to use a custom arrow and avoid
-  // the browsers that don't support it.
-  @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    background-image: url(#{$select-arrow});
-    background-position: right 0 top 50%; // better way to background-position
-    background-repeat: no-repeat;
+  &::after {
+    content: '»';
+    color: #2095d4;
+    position: absolute;
+    top: 1px;
+    right: 6px;
+    transform: rotate(90deg);
+    font-size: 20px;
+    z-index: 0;
   }
 
-  &:after {
-    content: '»';
+  select {
+    background-color: transparent;
+    border: 1px solid $border-menu;
+    border-radius: 0;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    padding: $select-padding;
+    width: $select-size;
     position: relative;
-    width: 20px;
+    z-index: 3;
   }
 }
