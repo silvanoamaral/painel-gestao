@@ -6,18 +6,15 @@ $color-white: #fff;
 $bg-white: #fff;
 $bg-menu: #0e1532;
 $bg-content: #f5f5f5;
+$bg-red: red;
 $border-header: #ccc;
 $border-menu: #2095d4;
 $border-list-cart: #2095d4;
 $border-content-h3: #ccc;
-$arroba: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewBox='0 0 512 512' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M256,0C114.609,0,0,114.609,0,256c0,141.391,114.609,256,256,256c141.391,0,256-114.609,256-256 C512,114.609,397.391,0,256,0z M256,472c-119.297,0-216-96.703-216-216S136.703,40,256,40s216,96.703,216,216S375.297,472,256,472 z' %3E%3C/path%3E%3Cpath d='M315.844,198.359c0.172-1.109,0.25-2.141,0.25-3.094c0-8.797-5.5-13.172-16.5-13.172c-5.281,0-8.844,0.906-10.688,2.688 c-1.875,1.812-3.156,5.391-3.906,10.75c-4.219-5.938-8.469-9.938-12.75-12.016c-3.938-1.891-9.578-2.828-16.875-2.828 c-18.797,0-35.109,9.562-48.875,28.672c-12.688,17.578-19.016,36.359-19.016,56.329c0,15.594,4.109,29.28,12.344,41.094 c9.125,13.016,21.062,19.516,35.766,19.516c12.594,0,24.688-4.516,36.266-13.547c5.22,9.031,14.142,13.547,26.734,13.547 c23.844,0,44.267-10.062,61.219-30.203C375.938,276.938,384,254.906,384,230.031c0-29.75-12.516-54.562-37.547-74.422 C323.266,137.219,296.75,128,266.844,128c-38.906,0-71.562,12.297-98.016,36.906C141.609,190.281,128,222.656,128,262.062 c0,40.266,13.953,71.188,41.828,92.78C194.859,374.297,227.688,384,268.344,384c17.312,0,34.188-2.703,50.656-8.141 c18.062-5.922,32.922-14.359,44.594-25.297c3.767-3.609,7.392-8,10.828-13.156c4.297-6.297,6.422-11.375,6.422-15.234 c0-2.922-1.016-5.531-3.078-7.828c-2.047-2.281-4.516-3.422-7.358-3.422c-5.392,0-9.922,1.906-13.625,5.672 c-6.109,6.562-10.656,11.562-13.595,15c-20,17.469-44.844,26.203-74.594,26.203c-31.906,0-57.438-7.828-76.578-23.484 c-20.922-17.108-31.375-41.625-31.375-73.53c0-30.969,9.938-56.844,29.859-77.625C210.406,162.391,235.484,152,265.703,152 c23.781,0,43.547,6.75,59.328,20.281c16.906,14.344,25.328,33.438,25.328,57.25c0,12.469-2.125,24.094-6.422,34.828 c-4.781,12.047-11.72,21.328-20.781,27.858c-6.812,4.892-12.142,7.345-16,7.345c-4.203,0-6.297-1.97-6.297-5.922 c0-1.642,1.078-9.203,3.281-22.72L315.844,198.359z M267.344,269.578c-7.734,21.453-15.969,32.188-24.688,32.188 c-13.031,0-19.547-8.312-19.547-24.953c0-12.922,3.734-27.469,11.234-43.688c8.734-19.141,18.672-28.703,29.845-28.703 c4.625,0,8.062,2.5,10.328,7.484c1.844,3.812,2.766,8.344,2.766,13.594C277.281,236.719,273.984,251.406,267.344,269.578z' %3E%3C/path%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E";
-$chart-bar: "data:image/svg+xml,%3Csvg aria-hidden='true' data-icon='chart-bar' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M332.8 320h38.4c6.4 0 12.8-6.4 12.8-12.8V172.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v134.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V76.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v230.4c0 6.4 6.4 12.8 12.8 12.8zm-288 0h38.4c6.4 0 12.8-6.4 12.8-12.8v-70.4c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v70.4c0 6.4 6.4 12.8 12.8 12.8zm96 0h38.4c6.4 0 12.8-6.4 12.8-12.8V108.8c0-6.4-6.4-12.8-12.8-12.8h-38.4c-6.4 0-12.8 6.4-12.8 12.8v198.4c0 6.4 6.4 12.8 12.8 12.8zM496 384H64V80c0-8.84-7.16-16-16-16H16C7.16 64 0 71.16 0 80v336c0 17.67 14.33 32 32 32h464c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z' class=''%3E%3C/path%3E%3C/svg%3E";
-$globo: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fal' data-icon='globe' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512' class='svg-inline--fa fa-globe fa-w-16'%3E%3Cpath fill='currentColor' d='M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm193.2 152h-82.5c-9-44.4-24.1-82.2-43.2-109.1 55 18.2 100.2 57.9 125.7 109.1zM336 256c0 22.9-1.6 44.2-4.3 64H164.3c-2.7-19.8-4.3-41.1-4.3-64s1.6-44.2 4.3-64h167.4c2.7 19.8 4.3 41.1 4.3 64zM248 40c26.9 0 61.4 44.1 78.1 120H169.9C186.6 84.1 221.1 40 248 40zm-67.5 10.9c-19 26.8-34.2 64.6-43.2 109.1H54.8c25.5-51.2 70.7-90.9 125.7-109.1zM32 256c0-22.3 3.4-43.8 9.7-64h90.5c-2.6 20.5-4.2 41.8-4.2 64s1.5 43.5 4.2 64H41.7c-6.3-20.2-9.7-41.7-9.7-64zm22.8 96h82.5c9 44.4 24.1 82.2 43.2 109.1-55-18.2-100.2-57.9-125.7-109.1zM248 472c-26.9 0-61.4-44.1-78.1-120h156.2c-16.7 75.9-51.2 120-78.1 120zm67.5-10.9c19-26.8 34.2-64.6 43.2-109.1h82.5c-25.5 51.2-70.7 90.9-125.7 109.1zM363.8 320c2.6-20.5 4.2-41.8 4.2-64s-1.5-43.5-4.2-64h90.5c6.3 20.2 9.7 41.7 9.7 64s-3.4 43.8-9.7 64h-90.5z' class=''%3E%3C/path%3E%3C/svg%3E";
-$select-arrow: 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE0LjgzIDE2LjQybDkuMTcgOS4xNyA5LjE3LTkuMTcgMi44MyAyLjgzLTEyIDEyLTEyLTEyeiIvPjxwYXRoIGQ9Ik0wLS43NWg0OHY0OGgtNDh6IiBmaWxsPSJub25lIi8+PC9zdmc+';
+
 $select-padding: 10px;
 $select-size: 60%;
 $arrow: '»';
-$sync: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon='sync' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' class='svg-inline--fa fa-sync fa-w-16'%3E%3Cpath fill='currentColor' d='M440.935 12.574l3.966 82.766C399.416 41.904 331.674 8 256 8 134.813 8 33.933 94.924 12.296 209.824 10.908 217.193 16.604 224 24.103 224h49.084c5.57 0 10.377-3.842 11.676-9.259C103.407 137.408 172.931 80 256 80c60.893 0 114.512 30.856 146.104 77.801l-101.53-4.865c-6.845-.328-12.574 5.133-12.574 11.986v47.411c0 6.627 5.373 12 12 12h200.333c6.627 0 12-5.373 12-12V12c0-6.627-5.373-12-12-12h-47.411c-6.853 0-12.315 5.729-11.987 12.574zM256 432c-60.895 0-114.517-30.858-146.109-77.805l101.868 4.871c6.845.327 12.573-5.134 12.573-11.986v-47.412c0-6.627-5.373-12-12-12H12c-6.627 0-12 5.373-12 12V500c0 6.627 5.373 12 12 12h47.385c6.863 0 12.328-5.745 11.985-12.599l-4.129-82.575C112.725 470.166 180.405 504 256 504c121.187 0 222.067-86.924 243.704-201.824 1.388-7.369-4.308-14.176-11.807-14.176h-49.084c-5.57 0-10.377 3.842-11.676 9.259C408.593 374.592 339.069 432 256 432z' class=''%3E%3C/path%3E%3C/svg%3E";
 
 * {
   padding: 0px;
@@ -27,6 +24,7 @@ $sync: "data:image/svg+xml,%3Csvg aria-hidden='true' data-prefix='fas' data-icon
   font-size: 14px;
   line-height: 1.42857143;
   color: $color-padrao;
+  outline: none;
 }
 
 body {
@@ -37,26 +35,6 @@ a {
   text-decoration: none;
 }
 
-.chart,
-.arroba {
-  background-repeat: no-repeat;
-  width: 35px;
-  height: 35px;
-  color: $color-title;
-  position: relative;
-  top: 5px;
-
-  fill: $color-title;
-}
-
-.chart {
-  background-image: url($chart-bar);
-}
-
-.arroba {
-  background-image: url($arroba);
-}
-
 .header {
   width: 100%;
   background: $bg-white;
@@ -64,21 +42,81 @@ a {
   min-height: 60px;
   display: block;
 
-  .grupo__economico {
-    width: 320px;
+  .search {
     float: left;
+    width: 20%;
+    position: relative;
+
+    input[type="text"] {
+      height: 40px;
+      width: 83%;
+      font-size: 12px;
+      border: 0;
+      text-align: right;
+      overflow: hidden;
+      padding-top: 18px;
+    }
+
+    i {
+      position: absolute;
+      right: 20px;
+      top: 28px;
+
+      svg {        
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .content {
+    background-color: $bg-white;
+    border-left: 1px solid $border-header;
+    float: left;
+    width: 77%;
+
+    .right {
+      float: right;
+    }
+
+    .logo__marca {
+      float: left;
+
+      h1 {
+        position: relative;
+        top: 0px;
+        height: 45px;
+        overflow: hidden;
+
+        svg {
+          width: 200px;
+          height: 90px;
+          position: relative;
+          top: -11px;
+        }
+      }
+    }
+  }
+
+  .grupo__economico {
+    width: 300px;
+    float: left;
+    margin-right: 10px;
 
     .select_list {
       p {
         float: left;
         margin-right: 20px;
         position: relative;
-        top: 12px;
+        top: 14px;
+        font-size: 12px;
       }
 
       select {
         float: left;
         width: 170px;
+        font-size: 12px;
+        height: 43px;
       }
 
       &::after{
@@ -93,35 +131,66 @@ a {
 
     .select_list {
       background-color: $bg-menu;
+      float: left;
+      height: 42px;
+      line-height: 42px;
+      width: 160px;
 
       p {
+        line-height: 43px;
+
         span {
           color: $color-white;
+          margin-left: 10px;
+          font-size: 12px;
         }
       }
 
       i {
         display: inline-block;
+        margin-left: 12px;
 
         img {
-          width: 15px;
+          width: 13px;
+          position: relative;
+          top: 1px;
         }
       }
     }
 
     .cart {
       background-color: $border-list-cart;
+      float: left;
+      width: 40px;
+      height: 42px;
+      text-align: center;
 
       .cart__qtd {
         position: relative;
-        font-size: 13px;
-        color: $color-white;
+
+        span {
+          font-size: 11px;
+          color: $color-white;
+          position: relative;
+          line-height: 15px;
+          z-index: 2;
+          background-color: $bg-red;
+          display: block;
+          border-radius: 50px;
+          width: 15px;
+          height: 15px;
+          left: 15px;
+          top: 6px;
+        }
 
         i {
           position: absolute;
+          top: 13px;
+          left: -8px;
+          z-index: 0;
 
           img {
-            width: 14px;
+            width: 16px;
           }
         }
       }
